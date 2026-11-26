@@ -1,0 +1,102 @@
+<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.5 578" width="595.5" height="578" id="m9a3157__root" data-diagram-type="ascii">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .m-note .m-shape{fill:var(--m-note-fill);stroke:var(--m-note-stroke);stroke-width:1px}.mercat .m-note .m-label{fill:var(--m-note-text)}.mercat .t-label{font-size:13px;font-weight:500}</style>
+  <style data-mercat-style="theme-light">#m9a3157__root{--m-bg:#ffffff;--m-text:#1f1f1f;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775;--m-note-fill:#fef9e7;--m-note-stroke:#f39c12;--m-note-text:#1f1f1f}</style>
+  <style data-mercat-style="theme-dark">#m9a3157__root.dark{--m-bg:#1f1f1f;--m-text:#e3e3e3;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f;--m-note-fill:#69550d;--m-note-stroke:#f39c12;--m-note-text:#e3e3e3}</style>
+  <style data-mercat-style="type">#m9a3157__root .rect-pill{fill:var(--m-bg);stroke:var(--m-node-stroke);stroke-width:1.5px}#m9a3157__root .hex-pill{fill:var(--m-bg);stroke:var(--m-node-stroke);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round}#m9a3157__root .label-text{fill:var(--m-text);font-size:13px;font-weight:500;white-space:pre}#m9a3157__root .arrow-line,#m9a3157__root .bus-line{fill:none;stroke:var(--m-line);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round}#m9a3157__root .annotation-text{fill:var(--m-text);font-size:12px;font-weight:500;white-space:pre}</style>
+  <style data-mercat-style="diagram">#m9a3157__root text{font-family:Google Sans Mono, Roboto Mono, monospace}</style>
+  <g class="mercat mercat-ascii">
+    <defs>
+      <marker id="m9a3157__mk-arrow" refX="9.45" refY="3.4" markerWidth="10.8" markerHeight="6.8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 0 L 10.8 3.4 L 0 6.8 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+    </defs>
+    <g class="m-node shape inner" id="m9a3157__node__n0" data-role="step">
+      <rect x="15" y="15" width="200" height="20" rx="3" ry="3" class="m-shape rect-pill"/>
+      <text x="115" y="25" class="m-label t-label label-text" text-anchor="middle">FRONTEND (Navegador)</text>
+    </g>
+    <g class="m-node shape inner" id="m9a3157__node__n1" data-role="decision">
+      <polygon points="329.5,91 338.5,81 571.5,81 580.5,91 571.5,101 338.5,101" class="m-shape hex-pill"/>
+      <text x="455" y="91" class="m-label t-label label-text" text-anchor="middle">method: 'POST', body: JSON</text>
+    </g>
+    <g class="m-node shape inner" id="m9a3157__node__n2" data-role="step">
+      <rect x="15" y="147" width="174.5" height="20" rx="3" ry="3" class="m-shape rect-pill"/>
+      <text x="102.25" y="157" class="m-label t-label label-text" text-anchor="middle">BACKEND (Node.js)</text>
+    </g>
+    <g class="m-node shape inner" id="m9a3157__node__n3" data-role="step">
+      <rect x="15" y="499" width="225.5" height="20" rx="3" ry="3" class="m-shape rect-pill"/>
+      <text x="127.75" y="509" class="m-label t-label label-text" text-anchor="middle">BASE DE DATOS (MongoDB)</text>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__pt__0" data-role="connector">
+      <line x1="17.25" y1="132.5" x2="578.25" y2="132.5" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__n2__pt__0" data-role="connector">
+      <line x1="17.25" y1="137.5" x2="578.25" y2="137.5" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__a2__0" data-role="connector">
+      <line x1="76.75" y1="201" x2="105.15" y2="201" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__a4__0" data-role="connector">
+      <line x1="76.75" y1="267" x2="105.15" y2="267" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__a6__0" data-role="connector">
+      <line x1="76.75" y1="333" x2="105.15" y2="333" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__pt__1" data-role="connector">
+      <line x1="17.25" y1="484.5" x2="578.25" y2="484.5" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__n3__pt__0" data-role="connector">
+      <line x1="17.25" y1="489.5" x2="578.25" y2="489.5" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__pt__a11__0" data-role="connector">
+      <line x1="76.75" y1="553" x2="105.15" y2="553" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__n0__pt__0" data-role="connector">
+      <line x1="76.75" y1="35" x2="76.75" y2="133.65" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__n2__pt__1" data-role="connector">
+      <line x1="76.75" y1="167" x2="76.75" y2="333" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__n3__pt__1" data-role="connector">
+      <line x1="76.75" y1="519" x2="76.75" y2="553" class="m-path bus-line"/>
+    </g>
+    <g class="m-edge" id="m9a3157__edge__a9__pt__0" data-role="connector">
+      <line x1="212.75" y1="410" x2="212.75" y2="485.65" class="m-path arrow-line" marker-end="url(#m9a3157__mk-arrow)"/>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a0" data-role="annotation">
+      <text x="98" y="69" class="m-label t-label annotation-text" text-anchor="start">1. Usuario hace clic en "Enviar"</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a1" data-role="annotation">
+      <text x="98" y="91" class="m-label t-label annotation-text" text-anchor="start">2. fetch('/api/suscripciones'),</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a2" data-role="annotation">
+      <text x="115" y="201" class="m-label t-label annotation-text" text-anchor="start">3. server.js (Punto de entrada)</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a3" data-role="annotation">
+      <text x="140.5" y="223" class="m-label t-label annotation-text" text-anchor="start">Recibe la petición HTTP POST y lee la URL.</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a4" data-role="annotation">
+      <text x="115" y="267" class="m-label t-label annotation-text" text-anchor="start">4. Enrutador (Router)</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a5" data-role="annotation">
+      <text x="140.5" y="289" class="m-label t-label annotation-text" text-anchor="start">Identifica la ruta '/api/suscripciones' y la redirige.</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a6" data-role="annotation">
+      <text x="115" y="333" class="m-label t-label annotation-text" text-anchor="start">5. Controlador (Controller)</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a7" data-role="annotation">
+      <text x="157.5" y="355" class="m-label t-label annotation-text" text-anchor="start">Extrae el email del JSON (req.body).</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a8" data-role="annotation">
+      <text x="157.5" y="377" class="m-label t-label annotation-text" text-anchor="start">Valida que el formato sea seguro y correcto.</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a9" data-role="annotation">
+      <text x="157.5" y="399" class="m-label t-label annotation-text" text-anchor="start">Ejecuta la lógica: "Hay que guardar este dato".</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a10" data-role="annotation">
+      <text x="234" y="443" class="m-label t-label annotation-text" text-anchor="start">6. Modelo / Mongoose (ej. Contacto.create())</text>
+    </g>
+    <g class="m-node m-note" id="m9a3157__note__a11" data-role="annotation">
+      <text x="115" y="553" class="m-label t-label annotation-text" text-anchor="start">7. Guarda el documento JSON en la colección y confirma.</text>
+    </g>
+  </g>
+</svg>

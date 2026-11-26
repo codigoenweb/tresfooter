@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/adminStyle.css">
+    <title>Administrador de mensajes</title>
+</head>
+<body>
+  <main>
+    <!-- Sección LOGIN -->
+    <section id="login" class="tarjeta" style="max-width: 430px; margin: 8vh auto;">
+        <h1>Acceso Propietario</h1>
+        <p class="atenuado">Ingresá con las credenciales privadas del administrador.</p>
+        <form id="formulario-contacto">
+            <label>
+                <span>Correo administrador</span>
+                <input type="text" name="email" autocomplete="username" required>
+            </label>
+            <label>
+                <span>Contraseña</span>
+                <input type="password" name="password" autocomplete="current-password" required>
+            </label>
+            <button type="submit">Ingresar</button>
+            <p id="login-msg" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- Sección DASHBOARD o Panel de Control -->
+     <section id="dashboard" class="oculto">
+      <div class="barra">
+        <div class="">
+            <h1>Mensajes y Suscripciones</h1>
+            <p class="atenuado">Bandeja privada conectada a MongoDB Atlas </p>
+        </div>
+        <button id="logout" class="secundario">Cerrar Sesión</button>
+      </div>
+      <div class="tarjeta barra" style="margin-top: 1rem;">
+        <div class="">
+            <strong id="total">0 registros</strong>
+            <span class="atenuado" id="noleidos"></span>
+        </div>
+        <div class="fila tabs">
+            <button data-tipo="todos" class="activo">Todos</button>
+            <button data-tipo="mensaje" class="secundario">Mensajes</button>
+            <button data-tipo="suscripcion" class="secundario">Suscripciones</button>
+        </div>
+      </div>
+      <div id="registros">
+        <!-- Provisoriamente porque se completará con la info proveniente de la BD -->
+         <!-- <article class="item">
+            <div class="barra">
+                <strong>Mensaje<span class="exitoso">Nuevo</span></strong>
+                <span class="meta">21/11/2026</span>
+            </div>
+            <p><strong>Ana María</strong> ana@gmail.com</p>
+            <p>Cuál es el horario de atención?</p>
+            <div class="fila">
+                <button data-leido="2" class="secundario">Marcar leído</button>
+                <button data-elominar="2"  class="danger">Eliminar</button>
+            </div>
+         </article>
+
+         <article class="item">
+            <div class="barra">
+                <strong>Mensaje<span class="exitoso">Nuevo</span></strong>
+                <span class="meta">21/11/2026</span>
+            </div>
+            <p><strong>Ana María</strong> ana@gmail.com</p>
+            <p>Cuál es el horario de atención?</p>
+            <div class="fila">
+                <button data-leido="2" class="secundario">Marcar leído</button>
+                <button data-elominar="2"  class="danger">Eliminar</button>
+            </div>
+         </article>
+
+         <article class="item">
+            <div class="barra">
+                <strong>Mensaje<span class="exitoso">Nuevo</span></strong>
+                <span class="meta">21/11/2026</span>
+            </div>
+            <p><strong>Ana María</strong> ana@gmail.com</p>
+            <p>Cuál es el horario de atención?</p>
+            <div class="fila">
+                <button data-leido="2" class="secundario">Marcar leído</button>
+                <button data-elominar="2"  class="danger">Eliminar</button>
+            </div>
+         </article> -->
+
+
+      </div>
+      <div class="fila">
+        <button id="prev" class="secundario">Anterior</button>
+        <span id="pagina" class="atenuado">Página 1</span>
+        <button id="next" class="secundario">Siguiente</button>
+      </div>
+     </section>
+  </main>
+
+
+    <script src="/js/adminScript.js" defer></script>
+</body>
+</html>

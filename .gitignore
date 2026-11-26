@@ -1,0 +1,12 @@
+.env
+
+# Dependencias de Node.js (pesan mucho y se reinstalan con npm install)
+node_modules/
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs de errores
+npm-debug.log*
