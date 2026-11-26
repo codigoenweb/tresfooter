@@ -14,7 +14,7 @@ import { conectarBD } from './src/config/db.js';
 
 const miApp = express();
 
-const PUERTO = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const _dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
@@ -73,7 +73,11 @@ miApp.use((error, peticion, respuesta, siguiente)=>{
 });
 
 
-
-
 await conectarBD();
-miApp.listen(PUERTO, () => console.log(`Servidor funcionando en http://localhost:${PUERTO}`))
+
+// ✅ Solo enciende el puerto si NO está en Vercel (ej. Render o localhost)
+if (!process.env.VERCEL) {
+    miApp.listen(PORT, () => console.log(`Servidor funcionando en http://localhost:${PORT}`))
+}
+// ✅ Exporta la app para que Vercel la tome como función serverless
+export default miApp;
