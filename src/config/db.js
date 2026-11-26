@@ -23,4 +23,4 @@ let cached = global.mongoose;
    cached.conn = await cached.promise;
    console.log('Conectado a MongoDB Atlas.');
    return cached.conn;
-/ }
+}
